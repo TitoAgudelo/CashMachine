@@ -8,7 +8,7 @@
 	$notes = array(100, 50, 20, 10);
 	$count = 0;
 
-	if($cash <= 0){
+	if($cash <= 0 || $cash < min($notes){
 		echo "throw InvalidArgumentException";
 	}
 	
