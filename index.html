@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cash Machine</title>
+  <link rel="stylesheet" href="foundation/css/foundation.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="foundation/js/vendor/modernizr.js"></script>
+</head>
+<body>  
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>Welcome to Cash Machine</h1>
+    </div>
+  </div>
+  <div class="row" ng-controller="CashController">
+    <div class="large-5 large-offset-3 columns">
+      <h3>{{ value }}</h3>
+      <fieldset>
+        <legend>Please enter data</legend>
+        <div class="button-bar">
+          <ul class="small-block-grid-3 radius">
+            <li ng-repeat="num in numbers">
+              <button class="large button info radius" ng-click="add(num)">{{num}}</button>
+            </li>
+            <li><a href="#" ng-click="cancel()"  class="large button info del radius">Del</a></li>
+          </ul>
+        </div>
+        <button class="radius success" ng-click="cash()" ng-disabled="!value.length">Continue</button>
+        <h3>{{ result }}</h3>
+      </fieldset>
+    </div>
+  </div>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
