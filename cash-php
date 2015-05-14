@@ -21,6 +21,6 @@
 	while($cash > 0);
 	foreach($result as $note => $position)
 	{
-		echo $note . ", ";
+		echo $position . ' notes of ' . $note . ', ';
 	}
 ?>
