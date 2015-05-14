@@ -29,7 +29,8 @@ app.controller('CashController', function($scope, $http) {
 				$scope.value = '';
 			}).
 			error(function(data, status, headers, config) {
-				$scope.result = "throw NoteUnavailableException";
+				$scope.value = '';
+				$scope.result = '';
 			});
 		}
 	}

@@ -8,7 +8,7 @@
 	$notes = array(100, 50, 20, 10);
 	$count = 0;
 
-	if($cash <= 0 || $cash < min($notes){
+	if($cash < 10){
 		echo "throw InvalidArgumentException";
 	}
 	
@@ -22,7 +22,7 @@
 		++$count;
 	}
 
-	while($cash > 0);
+	while($cash >= 10);
 	foreach($result as $note => $position)
 	{
 		echo $position . ' notes of ' . $note . ', ';
