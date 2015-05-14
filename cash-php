@@ -7,6 +7,10 @@
 	$result = array();
 	$notes = array(100, 50, 20, 10);
 	$count = 0;
+
+	if($cash <= 0){
+		echo "throw InvalidArgumentException";
+	}
 	
 	do {
 		if(($cash / $notes[$count]) < 1) {
