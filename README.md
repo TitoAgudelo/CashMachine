@@ -1,7 +1,7 @@
 # CashMachine
 Cash Machine simulation test
 
-his README outlines the details of collaborating on this Ember application.
+his README outlines the details of collaborating on this application.
 
 ## Prerequisites
 
